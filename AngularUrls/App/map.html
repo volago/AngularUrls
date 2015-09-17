@@ -1,0 +1,14 @@
+﻿<div style="background-color: aliceblue">
+    MAP HTML
+    {{$scope.msg}}
+    <div ui-view></div>
+    <div>
+        <a ui-sref="backend">Go to BACKEND</a>
+    </div>
+    <div>
+        <a ui-sref="map.touristObject({uname: 'wojanow'})">Go to TO: wojanow</a>
+    </div>
+    <div>
+        <a ui-sref="map.touristObject({uname: 'zamek'})">Go to TO: zamek</a>
+    </div>
+</div>
