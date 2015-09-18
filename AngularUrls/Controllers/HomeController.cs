@@ -10,19 +10,10 @@ namespace AngularUrls.Controllers
     {
         public ActionResult Index()
         {
-            return View();
-        }
+            var or = Request.ServerVariables["HTTP_X_ORIGINAL_URL"];
 
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
+            var xx = Request.ServerVariables["SCRIPT_NAME"];
+            var yy = Request.ServerVariables["QUERY_STRING"];
 
             return View();
         }
